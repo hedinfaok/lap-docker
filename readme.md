@@ -7,7 +7,7 @@ How to use
 
 Manual build:
 
-1. `docker build -t usdaeas/lamp-docker git@github.com:usda-ocio-eas/docker.git`
+1. `docker build -t usdaeas/lap-docker git@github.com:usda-ocio-eas/lap-docker.git`
 
 Usage:
 
@@ -18,7 +18,7 @@ Usage:
  - Nginx routing host:80 to a port opened by docker (see below)
 2. Run the docker image
  - If you have a mysql instance running, and want to link it to the container, see section below.
- - `docker run -d --name "domain.com" --hostname "domain.com" -p 8080:80 -v /home/websites/domain.com:/var/www usdaeas/lamp-docker`
+ - `docker run -d --name "domain.com" --hostname "domain.com" -p 8080:80 -v /home/websites/domain.com:/var/www usdaeas/lap-docker`
 3. There is no step 3. See below for additional configuration
 
 Linking MySQL
@@ -34,7 +34,7 @@ docker run -d --name "domain.com" \
 	-e "DB_USER={MYSQL_USER}" \
 	-e "DB_PASS={MYSQL_PASSWORD}" \
 	-e "DB_NAME={MYSQL_DB_NAME}" \
-	usdaeas/lamp-docker
+	usdaeas/lap-docker
 ```
 
 In your PHP script, access those variables using:

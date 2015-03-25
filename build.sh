@@ -1,1 +1,1 @@
-docker build -t usdaeas/lamp-docker .
+docker build -t usdaeas/lap-docker .
