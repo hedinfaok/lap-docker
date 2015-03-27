@@ -37,7 +37,6 @@ RUN rm -rf /var/www
 RUN apt-get install -y libsqlite3-dev ruby1.9.1-dev
 
 # Install Mailcatcher as a Ruby gem
-RUM gem update
 RUN gem install mailcatcher --no-rdoc --no-ri
 
 # Install Mailcatcher php configuration
