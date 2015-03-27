@@ -9,11 +9,6 @@ RUN apt-get install -y imagemagick php5-imagick php5-gd
 RUN pear install Mail Mail_Mime Net_SMTP Net_Socket Spreadsheet_Excel_Writer XML_RPC
 RUN php5enmod mcrypt
 
-# Fix locale issues
-RUN export LC_CTYPE=en_US.UTF-8
-RUN export LANG=en_US.UTF-8
-RUN unset LC_ALL
-
 RUN apt-get install -y supervisor
 RUN mkdir -p /var/log/supervisor
 
@@ -43,7 +38,7 @@ RUN apt-get install -y libsqlite3-dev ruby1.9.1-dev
 
 # Install Mailcatcher as a Ruby gem
 RUM gem update
-RUN gem install mailcatcher
+RUN gem install mailcatcher --no-rdoc --no-ri
 
 # Install Mailcatcher php configuration
 ADD conf/mailcatcher.ini /etc/php5/conf.d/mailcatcher.ini
