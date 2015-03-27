@@ -38,6 +38,7 @@ RUN apt-get install -y libsqlite3-dev ruby1.9.1-dev
 
 # Install Mailcatcher as a Ruby gem
 RUN gem install mailcatcher --no-rdoc --no-ri
+ADD conf/mailcatcher.upstart /etc/init.d/mailcatcher
 
 # Install Mailcatcher php configuration
 ADD conf/mailcatcher.ini /etc/php5/conf.d/mailcatcher.ini
