@@ -27,6 +27,9 @@ Linking MySQL
 
 Run a mysql instance, make sure to name it 'mysqldb' or similar.
 
+docker build -t mysqldb github.com/nkratzke/easymysql
+docker run -d -p 3306:3306 mysqldb
+
 ```
 docker run -d --name "domain.com" \
 	-p 8080:80 \
