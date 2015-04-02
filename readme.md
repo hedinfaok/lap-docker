@@ -18,7 +18,7 @@ Usage:
  - Nginx routing host:80 to a port opened by docker (see below)
 2. Run the docker image
  - If you have a mysql instance running, and want to link it to the container, see section below.
- - `docker run -d --name "domain.com" --hostname "domain.com" -p 8080:80 -v /home/websites/domain.com:/var/www usdaeas/lap-docker`
+ - `docker run -d --name "domain.com" --hostname "domain.com" -p 1080:1080 -p 8080:80 -v /home/websites/domain.com:/var/www usdaeas/lap-docker`
 3. There is no step 3. See below for additional configuration
 4. Access bash via docker exec -t -i <container_id> bash
 
