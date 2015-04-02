@@ -41,7 +41,7 @@ RUN gem install mailcatcher --no-rdoc --no-ri
 ADD conf/mailcatcher.upstart /etc/init.d/mailcatcher
 
 # Install drush for Drupal Development
-RUN apt-get install drush
+RUN apt-get install -y drush
 
 # Install Mailcatcher php configuration
 ADD conf/mailcatcher.ini /etc/php5/conf.d/mailcatcher.ini
