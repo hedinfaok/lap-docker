@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 LAP Docker is maintained by the USDA OCIO EAS Web Tech Team
