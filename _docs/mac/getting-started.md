@@ -13,7 +13,7 @@ Requirements
 Run a basic LAMP stack
 ----------
 
-Manual build:
+Manually build images from git repository:
 
 1. `docker build -t usdaeas/lap-docker https://github.com/usda-ocio-eas/lap-docker.git`
 2. `docker build -t mysqldb https://github.com/nkratzke/easymysql`
