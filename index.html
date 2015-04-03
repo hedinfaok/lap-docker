@@ -2,7 +2,25 @@
 layout: default
 ---
 
-Linux, Apache, PHP, and sometimes MySQL for Docker
+<h2>Background</h2>
+
+<em>This project intends to provide a Docker software based repeated local and shared development environment</em>
+
+Out of the box, LAP Docker provides the following:
+<ul>
+<li>Linux (Ubuntu)</li>
+<li>Apache</li>
+<li>PHP</li>
+<li>Configurable MySQL</li>
+<li><a href="http://mailcatcher.me/">Mailcatcher</a></li>
+</ul>
+
+<h2>Upcoming support</h2>
+<ul>
+<li><a href="https://www.sqlite.org/">SQLite</a> (and other DB's)</li>
+<li><a href="http://www.adminer.org/">Adminer</a> (or other db admin tool)</li>
+<li><a href="https://pecl.php.net/package/xhprof">xhprof</a></li>
+</ul>
 
 <div class="posts">
   {% for post in site.posts limit:1 %}
