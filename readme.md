@@ -54,15 +54,14 @@ $db_host = getenv('DB_PORT_3306_TCP_ADDR');
 Sending Email
 -------------
 
-This image is configured to relay mail through mandrill. _(contribute to add other mail relays)._
+This image is configured to direct mail to mailcatcher. 
 
-Add the following environment variables when starting the image:
-- `MANDRILL_PWD=you@domain.com:myAPIPasswordGeneratedFromMandrillapp.com`
+Visit http://[ip-address]:1080 for access.
 
 Logging
 -------
 
-An interesting topic with docker, we've solved it by sending the log files to [papertrail](papertrailapp.com). Setting a hostname will ensure you know which log container to look at when required, and not having to dig around with `docker cp` etc.
+An interesting topic with docker, we've solved it by sending the log files to [papertrail](http://papertrailapp.com). Setting a hostname will ensure you know which log container to look at when required, and not having to dig around with `docker cp` etc.
 
 Set this environment variable to enable logging:
 - `RSYSLOG=*.* @logs2.papertrailapp.com:12345`
