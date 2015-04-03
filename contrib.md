@@ -4,11 +4,11 @@ title: Contrib
 permalink: /contrib/
 ---
 
-LAP Docker is maintained by the USDA OCIO EAS Web Tech Team
+LAP Docker is maintained by the USDA OCIO EAS Web Tech Team. 
 
-### Inquiries
+### Contributers Welcome!
 
-Inquiries and feature requests should be directed to:
+Contribution and feature request inquiries should be directed to:
 
 *Ron Williams*  
 Web Tech Team DevOps/Systems Administrator  
