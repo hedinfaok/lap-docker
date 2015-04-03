@@ -10,7 +10,7 @@ LAP Docker is maintained by the USDA OCIO EAS Web Tech Team
 
 Inquiries and feature requests should be directed to:
 
-Ron Williams
+*Ron Williams*
 
 Web Tech Team DevOps/Systems Administrator
 
