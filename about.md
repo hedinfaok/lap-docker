@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+LAP Docker is maintained by the USDA OCIO EAS Web Tech Team
 
-### More Information
+### Inquiries
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Inquiries and feature requests should be directed to [rone.williams@ocio.usda.gov](mailto:rone.williams@ocio.usda.gov)
