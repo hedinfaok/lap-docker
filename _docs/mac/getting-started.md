@@ -7,28 +7,28 @@ category: 'Mac OSX'
 
 Requirements
 ==============
-Install and configure [Docker for Windows](https://docs.docker.com/installation/windows/#installation)
+- Install and configure [Docker for Mac OSX](https://docs.docker.com/installation/mac/#install-boot2docker)
+- Run `Start boot2docker`
 
-
-How to use
+Run a basic LAMP stack
 ----------
 
 Manual build:
 
 1. `docker build -t usdaeas/lap-docker https://github.com/usda-ocio-eas/lap-docker.git`
-
+2. `docker build -t mysqldb https://github.com/nkratzke/easymysql`
 Usage:
 
 1. Make directories for your website files. We use the following setup:
- - `mkdir -p /home/websites/domain.com`
- - `chmod 750 /home/websites`
- - `chown root:root /home/websites`
- - Nginx routing host:80 to a port opened by docker (see below)
-2. Run the docker image
- - If you have a mysql instance running, and want to link it to the container, see section below.
- - `docker run -d --name "domain.com" --hostname "domain.com" -p 1080:1080 -p 8080:80 -v /home/websites/domain.com:/var/www usdaeas/lap-docker`
-3. There is no step 3. See below for additional configuration
-4. Access bash via docker exec -t -i <container_id> bash
+ - `mkdir ~/www/`
+ - `chmod 750 ~/www/`
+ - `chown root:root ~/www`
+ - `pwd` (record this returned directory for step 2)
+2. Run the mysqldb image
+ - `docker run --name="mysqldb" -e right="WRITE" -d -p 3306:3306 mysqldb`
+3. Run the usdaeas/lap-docker image
+ - `docker run -d --name "domain.com" --hostname "domain.com" -p 1080:1080 -p 8080:80 -v [pwd]:/var/www usdaeas/lap-docker`
+5. Access bash via `docker exec -t -i <container_id> bash`
 
 Linking MySQL
 -------------
