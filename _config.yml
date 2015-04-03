@@ -9,7 +9,7 @@ name: LAP Docker
 description: Docker LAP/MySQL for Drupal and PHP
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars0.githubusercontent.com/u/2753036?v=3&s=460
+avatar:
 
 #
 # Flags below are optional
