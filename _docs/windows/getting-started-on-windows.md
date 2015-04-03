@@ -5,8 +5,10 @@ category: 'Windows'
 ---
 
 
-LAMP on Docker
+Requirements
 ==============
+Install and configure [Docker for Windows](https://docs.docker.com/installation/windows/#installation)
+
 
 How to use
 ----------
