@@ -7,7 +7,7 @@ permalink: /docs/
   {% for doc in site.docs %}
     <article class="post">
 
-      <h2><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></h2>
+      <h2><a href="{{ site.baseurl }}{{ doc.url | remove: '.html' }}">{{ doc.title }}</a></h2>
 
     </article>
   {% endfor %}
