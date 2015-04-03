@@ -7,11 +7,7 @@ permalink: /docs/
   {% for doc in site.docs %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></h1>
-
-      <div class="entry">
-        {{ doc.excerpt }}
-      </div>
+      <h2><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></h2>
 
       <a href="{{ site.baseurl }}{{ doc.url }}" class="read-more">Read More</a>
     </article>
