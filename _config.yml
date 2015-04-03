@@ -14,7 +14,7 @@ avatar:
 collections:
   docs:
     output: true
-    permalink: /:collection/:path/:title/
+    permalink: /:collection/:path
 
 #
 # Flags below are optional
