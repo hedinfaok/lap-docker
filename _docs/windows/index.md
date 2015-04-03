@@ -1,6 +1,7 @@
 ---
 layout: docs
-title: Getting started with LAP Docker on Windows
+permalink: /docs/windows/
+title: Windows Documentation
 ---
 
 
