@@ -28,7 +28,7 @@ Usage:
 2. Run the mysqldb image
  - `docker run --name="mysqldb" -e right="WRITE" -d -p 3306:3306 mysqldb`
 3. Run the usdaeas/lap-docker image
- - `docker run -d --name "domain.com" --hostname "domain.com" -p 1080:1080 -p 8080:80 -v [pwd]:/var/www usdaeas/lap-docker`
+ - `docker run -d --name "domain.com" --hostname "domain.com" --link mysqldb:db -p 1080:1080 -p 80:80 -v [pwd]:/var/www usdaeas/lap-docker`
 5. Access bash via `docker exec -t -i <container_id> bash`
 
 Sending Email
