@@ -4,7 +4,8 @@ permalink: /docs/
 ---
 
 <div class="posts">
-  {% for doc = site.doc | where: "category", "Documentation" %}
+  {% assign docs = site.docs | where: "category", "Documentation" %}
+  {% for doc in docs %}
     <article class="post">
 
       <h2><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></h2>
