@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Getting started with LAP Docker on Windows
-category: 'Windows'
+title: Getting started with LAP Docker on Mac OSX
+category: 'Mac OSX'
 ---
 
 
