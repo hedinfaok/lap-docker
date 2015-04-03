@@ -11,6 +11,10 @@ description: Docker LAP/MySQL for Drupal and PHP
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar:
 
+collections:
+  docs:
+    output: true
+
 #
 # Flags below are optional
 #
