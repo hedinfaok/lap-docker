@@ -23,12 +23,11 @@ Usage:
 1. Make directories for your website files. We use the following setup:
  - `mkdir ~/www/`
  - `chmod 750 ~/www/`
- - `chown root:root ~/www`
- - `pwd` (record this returned directory for step 2)
+ - `echo $HOME/www` (this is your [home-www], record the returned directory for step 2)
 2. Run the mysqldb image
  - `docker run --name="mysqldb" -e right="WRITE" -d -p 3306:3306 mysqldb`
 3. Run the usdaeas/lap-docker image
- - `docker run -d --name "domain.com" --hostname "domain.com" --link mysqldb:db -p 1080:1080 -p 80:80 -v [pwd]:/var/www usdaeas/lap-docker`
+ - `docker run -d --name "domain.com" --hostname "domain.com" --link mysqldb:db -p 1080:1080 -p 80:80 -v [home-www]:/var/www usdaeas/lap-docker`
 5. Access bash via `docker exec -t -i <container_id> bash`
 
 Sending Email
