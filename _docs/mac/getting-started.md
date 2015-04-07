@@ -30,6 +30,12 @@ Usage:
 4. Access bash via `docker exec -t -i <container_id> bash`
  - The container_id can be retrieved by running `docker ps -a` for any existing container.
 
+Accessing Web Server
+--------------------
+
+Visit http://[docker-ip-address]/ within a browser to access the public directory of your LAP-Docker container.
+
+
 Sending Email
 -------------
 
