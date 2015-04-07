@@ -28,6 +28,7 @@ Usage:
 3. Run the usdaeas/lap-docker image
  - `docker run -d --name "domain.com" --hostname "domain.com" --link mysqldb:db -p 1080:1080 -p 80:80 -v ~/www:/var/www usdaeas/lap-docker`
 4. Access bash via `docker exec -t -i <container_id> bash`
+ - The container_id can be retrieved by running `docker ps -a` for any existing container.
 
 Sending Email
 -------------
