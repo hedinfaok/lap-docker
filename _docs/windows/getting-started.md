@@ -17,7 +17,7 @@ Run a basic LAMP stack
 Manually build images from git repository:
 
 1. `docker build -t usdaeas/lap-docker https://github.com/usda-ocio-eas/lap-docker.git`
-2. `docker build -t mysqldb https://github.com/nkratzke/easymysql`
+2. `docker build -t mysqldb https://github.com/nkratzke/easymysql.git`
 
 Usage:
 
