@@ -9,7 +9,7 @@ Requirements
 ----------
 - Ensure [Virtualization (VT-x)](http://en.wikipedia.org/wiki/X86_virtualization) support is enabled within BIOS
 - Install and configure [Docker for Windows](https://docs.docker.com/installation/windows/#installation)
-- Run `Start boot2docker`
+- Run the `Boot2Docker Start` program
 
 Run a basic LAMP stack
 ----------
