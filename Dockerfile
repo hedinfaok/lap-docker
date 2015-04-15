@@ -28,6 +28,7 @@ RUN chmod +x /etc/lamp.sh
 
 # Add admin scripts to directory
 COPY conf/tools/ /usr/local/share/lap-docker/
+RUN git clone https://github.com/potsky/PimpMyLog.git /usr/local/share/lap-docker/logs/
 
 # Fix session write warnings
 RUN chown www-data:www-data /var/lib/php5

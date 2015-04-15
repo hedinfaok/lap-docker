@@ -44,6 +44,7 @@
             <li class="active"><a href="#">Dashboard</a></li>
             <li><a href="adminer.php">Adminer</a></li>
             <li><a href="<?php print $mailcatcher; ?>">Mailcatcher</a></li>
+            <li><a href="phpinfo.php">phpinfo</a></li>
             <li><a href="http://usda-ocio-eas.github.io/lap-docker/news/">News</a></li>
             <li><a href="http://usda-ocio-eas.github.io/lap-docker/contrib/">Contrib</a></li>
             <li><a href="http://usda-ocio-eas.github.io/lap-docker/docs/">Docs</a></li>
