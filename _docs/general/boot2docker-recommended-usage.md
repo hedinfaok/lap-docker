@@ -14,7 +14,7 @@ LAP-Docker relies on Boot2Docker to provide and maintain a virtual machine for t
 Identify VM IP address
 ----------------------
 Run `boot2docker ip`
-
+![Image represents boot2docker ip command example output: command line shell with ip address]({{ site.baseurl }}/images/boot2docker-ip-output.png)
 
 Starting, Stopping, and Restarting Docker VM
 --------------------------------------------
