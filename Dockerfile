@@ -28,7 +28,19 @@ RUN chmod +x /etc/lamp.sh
 
 # Add admin scripts to directory
 COPY conf/tools/ /usr/local/share/lap-docker/
+
+# Install Pimp My Logs
 RUN git clone https://github.com/potsky/PimpMyLog.git /usr/local/share/lap-docker/logs/
+ADD conf/pimpmylog/pimpmylog.ini /etc/php5/conf.d/pimpmylog.ini
+RUN cd /etc/php5/cli/conf.d && ln -s ../../conf.d/pimpmylog.ini pimpmylog.ini &&\
+cd /etc/php5/apache2/conf.d && ln -s ../../conf.d/pimpmylog.ini pimpmylog.ini
+# Allows apache to read log files directly
+RUN usermod -G adm www-data
+# Creates initial php error log
+RUN touch /var/log/apache2/php.err
+# Creates default configuration file
+ADD conf/pimpmylog/config.user.php /usr/local/share/lap-docker/logs/config.user.php
+
 
 # Fix session write warnings
 RUN chown www-data:www-data /var/lib/php5
