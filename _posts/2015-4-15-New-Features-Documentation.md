@@ -32,7 +32,7 @@ Lastly, we've added a simple phpinfo() page to quickly determine how php is runn
 ![Image depicts Pimp my Log Page]({{ site.baseurl }}/images/pimpmylog-screenshot.png)
 
 
-New Documentation
+Documentation
 -----------------
 We've added new generalized LAP Docker information and improved the Mac and PC getting started guides. You can now find information on the following:
 
