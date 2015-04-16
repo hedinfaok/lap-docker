@@ -35,6 +35,7 @@ Lastly, we've added a simple phpinfo() page to quickly determine how php is runn
 New Documentation
 -----------------
 We've added new generalized LAP Docker information and improved the Mac and PC getting started guides. You can now find information on the following:
+
 - [Starting and stopping the boot2docker VM]({{ site.baseurl }}/docs/general/boot2docker-recommended-usage/)
 - [Reliably locating the VM IP address]({{ site.baseurl }}/docs/general/boot2docker-recommended-usage/)
 - [Exporting Log Files]({{ site.baseurl }}/docs/general/exporting-log-files/)
