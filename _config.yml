@@ -20,6 +20,14 @@ collections:
 # Flags below are optional
 #
 
+authors:
+  ron:
+    display_name: Ron Williams
+    email: hello@ronwilliams.io
+    web: http://www.ronwilliams.io/
+    twitter: Ron_Williams
+    github: RonWilliams
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:

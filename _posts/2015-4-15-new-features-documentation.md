@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New Features & Documentation
-author: [Ron Williams](http://ronwilliams.io/)
+author: ron
 ---
 
 *In the latest round of updates, we've added the following:*
