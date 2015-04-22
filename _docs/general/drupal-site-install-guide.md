@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Drupal Site Install Quickstart Guide
+title: Drupal Site Install Guide
 category: 'General'
 ---
 
