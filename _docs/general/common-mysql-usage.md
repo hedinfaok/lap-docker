@@ -13,5 +13,8 @@ Requirements
 
 Connecting to MySQL
 ----------
+
+*The default MySQL username and password are both "user"*
+
 1. [Access bash within the LAP Docker container]({{ site.baseurl }}/lap-docker/docs/general/accessing-docker-bash/)
 2. Open a connection to the MySQL container by running `mysql -u user -puser -h db`
