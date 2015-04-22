@@ -17,7 +17,7 @@ Run a basic LAMP stack
 Within Boot2Docker, build images from the git repository:
 
 1. `docker build -t usdaeas/lap-docker https://github.com/usda-ocio-eas/lap-docker.git`
-2. `docker build -t mysqldb https://github.com/nkratzke/easymysql.git`
+2. `docker build -t usdaeas/mysql https://github.com/usda-ocio-eas/MySQL-Docker`
 
 Container setup:
 
@@ -26,10 +26,10 @@ Container setup:
  - Notate the full path of the directory and convert to unix format (*this is your pwd used in step 3*)
    - /[drive-letter]/Users/[Username]/Documents/www
    - For a user named `ron` on drive `c`, the pwd would be `/c/Users/ron/Documents/www`
-2. Run the mysqldb image
- - `docker run --name="mysqldb" -e right="WRITE" -d -p 3306:3306 mysqldb`
+2. Run the usdaeas/mysql image
+ - `docker run --name="mysql" -e right="WRITE" -d -p 3306:3306 usdaeas/mysql`
 3. Run the usdaeas/lap-docker image
- - `docker run -d --name "domain.com" --hostname "domain.com" --link mysqldb:db -p 1080:1080 -p 80:80 -v [pwd]:/var/www usdaeas/lap-docker`
+ - `docker run -d --name "domain.com" --hostname "domain.com" --link mysql:db -p 1080:1080 -p 80:80 -v [pwd]:/var/www usdaeas/lap-docker`
 
 Accessing Apache Server
 -----------------------
