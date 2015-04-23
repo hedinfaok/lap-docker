@@ -1,7 +1,7 @@
 ---
 layout: docs
 permalink: /docs/general/
-title: General LAP-Docker Usage
+title: General LAP Docker Usage
 category: 'Documentation'
 ---
 
