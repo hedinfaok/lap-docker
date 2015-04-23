@@ -17,7 +17,7 @@ Run a basic LAMP stack
 Within Boot2Docker, build images from the git repository:
 
 1. `docker build -t usdaeas/lap-docker https://github.com/usda-ocio-eas/lap-docker.git`
-2. `docker build -t usdaeas/mysql https://github.com/usda-ocio-eas/MySQL-Docker`
+2. `docker build -t usdaeas/mysql https://github.com/usda-ocio-eas/MySQL-Docker.git`
 
 Container setup:
 
