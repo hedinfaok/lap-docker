@@ -13,7 +13,7 @@ Requirements
 
 Zero-to-Hero Guide
 ----------
-1. [Access bash within the LAP Docker container]({{ site.baseurl }}/lap-docker/docs/general/accessing-docker-bash/)
+1. [Access bash within the LAP Docker container]({{ site.baseurl }}/docs/general/accessing-docker-bash/)
 2. Download Drupal to your public directory
    - Run command `drush dl drupal --destination=/var/www --drupal-project-rename=drupal`
 3. Change to the newly download Drupal directory
