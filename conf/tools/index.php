@@ -66,13 +66,13 @@
           <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Support</h2>
-          <p>If you encounter a bug with the LAP Docker software, we want to hear from you! Send us a note and we'll be sure to fix or help you resolve the issue. </p>
-          <p><a class="btn btn-primary" href="mailto:rone.williams@ocio.usda.gov" role="button">Contact &raquo;</a></p>
+          <h2>Standard MySQL Connections</h2>
+          <p>LAP Docker supports MySQL connections using the following user credentials: <br><b>Username: </b>user<br><b>Password: </b>user </p>
+          <p><a class="btn btn-primary" href="adminer.php" role="button">Adminer &raquo;</a></p>
        </div>
         <div class="col-md-4">
-          <h2>Contribute</h2>
-          <p>LAP Docker is an open source software dedicated to providing rapid web application development, testing, and debugging. If you'd like to contribute to LAP Docker, get it touch.</p>
+          <h2>Contribute & Support</h2>
+          <p>LAP Docker is an open source software dedicated to providing rapid web application development, testing, and debugging. If you'd like to contribute to or support for using LAP Docker, get it touch.</p>
           <p><a class="btn btn-primary" href="mailto:rone.williams@ocio.usda.gov" role="button">Contribute &raquo;</a></p>
         </div>
       </div>
