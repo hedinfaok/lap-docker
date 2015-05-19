@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
     
     <!-- Custom styles for this template -->
-    <link href="index/justified-nav.css" rel="stylesheet">
+    <link href="justified-nav.css" rel="stylesheet">
 
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -67,7 +67,7 @@
         </div>
         <div class="col-md-4">
           <h2>Standard MySQL Connections</h2>
-          <p>LAP Docker supports MySQL connections using the following user credentials: <br><b>Username: </b>user<br><b>Password: </b>user </p>
+          <p>LAP Docker supports MySQL connections using the following user credentials: <br><b>Hostname: </b>db<br><b>Username: </b>user<br><b>Password: </b>user</p>
           <p><a class="btn btn-primary" href="adminer.php" role="button">Adminer &raquo;</a></p>
        </div>
         <div class="col-md-4">
