@@ -8,7 +8,7 @@ category: 'Mac OSX'
 Requirements
 ----------
 - Download and Install [Docker for Mac OSX](https://github.com/boot2docker/osx-installer/releases/latest)
- - [View detailed Boot2Docker Installation instructions](https://docs.docker.com/installation/mac/#install-boot2docker)
+ - [Detailed Boot2Docker Installation instructions](https://docs.docker.com/installation/mac/#install-boot2docker)
 - Run the `boot2docker` application from the applications folder
 
 Run a basic LAMP stack
