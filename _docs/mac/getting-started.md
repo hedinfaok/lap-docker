@@ -7,31 +7,29 @@ category: 'Mac OSX'
 
 Requirements
 ----------
-- Install and configure [Docker for Mac OSX](https://docs.docker.com/installation/mac/#install-boot2docker)
-- Run the `boot2docker` application
+- Download and Install [Docker for Mac OSX](https://github.com/boot2docker/osx-installer/releases/latest)
+ - [View detailed Boot2Docker Installation instructions](https://docs.docker.com/installation/mac/#install-boot2docker)
+- Run the `boot2docker` application from the applications folder
 
 Run a basic LAMP stack
 ----------
 
-Within Boot2Docker, build images from the git repository:
+Within Mac terminal, perform the following:
 
-1. `docker pull usdaeas/lap-docker`
-2. `docker pull usdaeas/mysql`
+1. Make directories for your website files.
+ - Run command `mkdir ~/www && chmod 777 ~/www/`
+2. Notate Boot2Docker IP address (referenced as docker-ip-address later).
+ - Run command `boot2docker ip`
 
-Usage:
+Within Boot2Docker, perform the following:
 
-1. Make directories for your website files. We use the following setup:
- - `mkdir ~/www/` (this is your public web directory where you store files)
- - `chmod 777 ~/www/`
-2. Run the usdaeas/mysql image
- - `docker run --name="mysql" -e right="WRITE" -d -p 3306:3306 usdaeas/mysql`
-3. Run the usdaeas/lap-docker image
- - `docker run -d --name "domain.com" --hostname "domain.com" --link mysql:db -p 1080:1080 -p 80:80 -v ~/www:/var/www usdaeas/lap-docker`
-4. Access bash via `docker exec -t -i <container_id> bash`
- - The container_id can be retrieved by running `docker ps -a` for any existing container.
+1. Start the usdaeas/mysql container
+ - Run command `docker run --name="mysql" -e right="WRITE" -d -p 3306:3306 usdaeas/mysql`
+2. Start the usdaeas/lap-docker container
+ - Run command `docker run -d --name "domain.com" --hostname "domain.com" --link mysql:db -p 1080:1080 -p 80:80 -v ~/www:/var/www usdaeas/lap-docker`
+3. [Access bash within the LAP Docker container]({{ site.baseurl }}/docs/general/accessing-docker-bash/)
 
 Accessing Apache Server
 -----------------------
-1. Open a terminal window and run `boot2docker ip`; this is your Docker VM address.
-2. Visit http://[docker-ip-address]/ within a browser to access the public directory of your LAP-Docker container.
+1. Using the previously notated docker-ip-address, visit http://[docker-ip-address]/ within a browser to access the public directory of your LAP-Docker container.
 3. Visit the LAP Docker dashboard at http://[docker-ip-address]/lap-docker/ (the trailing forward-slash is required).
