@@ -18,7 +18,9 @@ Within Mac terminal, perform the following:
 
 1. Make directories for your website files.
  - Run command: `mkdir ~/www && chmod 777 ~/www/`
-2. Notate Boot2Docker IP address (referenced as docker-ip-address later).
+2. Setup the boot2docker virtual machine.
+ - Run command: `boot2docker init`
+3. Notate Boot2Docker IP address (referenced as docker-ip-address later).
  - Run command: `boot2docker ip`
 
 Within Boot2Docker, perform the following:
