@@ -59,6 +59,10 @@ ADD conf/mailcatcher.upstart /etc/init.d/mailcatcher
 # Install drush for Drupal Development
 RUN apt-get install -y drush
 
+# Install Bundler and Theme related tweaks
+RUN gem install bundler
+RUN export LC_ALL="C.UTF-8"
+
 # Install Mailcatcher php configuration
 ADD conf/mailcatcher.ini /etc/php5/conf.d/mailcatcher.ini
 RUN cd /etc/php5/cli/conf.d && ln -s ../../conf.d/mailcatcher.ini mailcatcher.ini &&\
