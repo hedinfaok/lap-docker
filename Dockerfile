@@ -1,6 +1,6 @@
 FROM centos:7
 MAINTAINER Ron Williams <hello@ronwilliams.io>
-ENV PATH /usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ENV PATH /usr/local/src/vendor/bin/:/usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 RUN yum -y update && \
     yum -y groupinstall "Development Tools" && \
@@ -25,6 +25,27 @@ RUN yum -y update && \
     vim \
     wget
 
+# Install misc tools
+RUN yum -y update && yum -y install \
+    python-setuptools \
+    rsyslog
+
+# Install supervisor. Requires python-setuptools
+RUN easy_install \
+    supervisor
+
+# Install Composer and Drush
+RUN curl -sS https://getcomposer.org/installer | php -- \
+    --install-dir=/usr/local/bin \
+    --filename=composer \
+    --version=1.0.0-alpha10 && \
+    composer \
+    --working-dir=/usr/local/src/ \
+    global \
+    require \
+    drush/drush:7.* && \
+    ln -s /usr/local/src/vendor/bin/drush /usr/bin/drush
+
 # Run yum -y update && yum -y install \
 #    php-fpm
 
@@ -36,15 +57,6 @@ RUN yum -y update && \
 # RUN yum -y update && yum -y install \
 #     cyrus-sasl \
 #     php-pear-Auth-SASL \  
-
-# Install misc tools
-RUN yum -y update && yum -y install \
-    python-setuptools \
-    rsyslog
-
-# Install supervisor. Requires python-setuptools
-RUN easy_install \
-    supervisor
 
 # RUN pear install \
 #     Mail \
